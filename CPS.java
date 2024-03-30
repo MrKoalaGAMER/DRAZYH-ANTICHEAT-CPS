@@ -14,7 +14,7 @@ public class CPS extends PacketCheck {
          if (packet instanceof VPacketPlayInFlying) {
             if (++this.ticks >= 20) {
                this.debug("cps=" + this.cps);
-               if ((double)this.cps > 35.0D && !this.playerData.isDiggingNew() && !this.playerData.isDigging()) {
+               if ((double)this.cps > 16.0D && !this.playerData.isDiggingNew() && !this.playerData.isDigging()) {
                   this.handleViolation("cps=" + this.cps);
                }
 
